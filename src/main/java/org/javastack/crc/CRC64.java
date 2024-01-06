@@ -126,15 +126,20 @@ public class CRC64 extends CRC {
 		return crc;
 	}
 
+	@Override
+	public Params getParams() {
+		return Preset.CRC_64_ECMA_182.params;
+	}
+
 	/**
 	 * Simple Test
 	 * 
 	 * @param args ignored
 	 */
 	public static void main(String[] args) {
-		final CRC64 crc = new CRC64();
+		final CRC crc = new CRC64();
 		crc.reset();
-		crc.update("123456789".getBytes());
+		crc.update(CRC.TEST_VALUE.getBytes());
 		System.out.println("6c40df5f0b497347=" + Long.toHexString(crc.getValue()));
 	}
 }

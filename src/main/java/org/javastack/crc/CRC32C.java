@@ -108,15 +108,20 @@ public class CRC32C extends CRC {
 		return ((long) (crc ^ 0xFFFFFFFF) & 0xFFFFFFFFL);
 	}
 
+	@Override
+	public Params getParams() {
+		return Preset.CRC_32_ISCSI.params;
+	}
+
 	/**
 	 * Simple Test
 	 * 
 	 * @param args ignored
 	 */
 	public static void main(final String[] args) {
-		final CRC32C crc = new CRC32C();
+		final CRC crc = new CRC32C();
 		crc.reset();
-		crc.update("123456789".getBytes());
+		crc.update(CRC.TEST_VALUE.getBytes());
 		System.out.println("e3069283=" + Long.toHexString(crc.getValue()));
 	}
 }

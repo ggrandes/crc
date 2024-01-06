@@ -64,7 +64,7 @@
 					<excludes>
 						<exclude>**/pom.properties</exclude>
 						<exclude>**/log4j.properties</exclude>
-						<exclude>**/sandbox/*</exclude>
+						<exclude>**/example/*</exclude>
 					</excludes>
 				</configuration>
 			</plugin>
@@ -86,7 +86,7 @@
 							</archive>
 							<excludeResources>true</excludeResources>
 							<excludes>
-								<exclude>**/sandbox/*</exclude>
+								<exclude>**/example/*</exclude>
 							</excludes>
 						</configuration>
 					</execution>
@@ -107,7 +107,7 @@
 				</executions>
 				<configuration>
 					<source>${java.version}</source>
-					<excludePackageNames>*.sandbox.*</excludePackageNames>
+					<excludePackageNames>*.example</excludePackageNames>
 				</configuration>
 			</plugin>
 			<!-- GPG Signed Components for Maven Central -->

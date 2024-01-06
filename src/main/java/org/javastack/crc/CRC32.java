@@ -102,15 +102,20 @@ public class CRC32 extends CRC {
 		return ((long) (crc ^ 0xFFFFFFFF) & 0xFFFFFFFFL);
 	}
 
+	@Override
+	public Params getParams() {
+		return Preset.CRC_32_ISO_HDLC.params;
+	}
+
 	/**
 	 * Simple Test
 	 * 
 	 * @param args ignored
 	 */
 	public static void main(final String[] args) {
-		final CRC32 crc = new CRC32();
+		final CRC crc = new CRC32();
 		crc.reset();
-		crc.update("123456789".getBytes());
+		crc.update(CRC.TEST_VALUE.getBytes());
 		System.out.println("cbf43926=" + Long.toHexString(crc.getValue()));
 	}
 }
