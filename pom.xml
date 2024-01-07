@@ -22,6 +22,11 @@
 			<email>guillermo.grandes@gmail.com</email>
 		</developer>
 	</developers>
+	<scm>
+		<connection>scm:git:https://github.com/ggrandes/${project.artifactId}.git</connection>
+		<developerConnection>scm:git:https://github.com/ggrandes/${project.artifactId}.git</developerConnection>
+		<url>https://github.com/ggrandes/${project.artifactId}.git</url>
+	</scm>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
