@@ -26,6 +26,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
+		<start-class>org.javastack.crc.cli.CommandLine</start-class>
 	</properties>
 
 	<dependencies>
@@ -53,6 +54,8 @@
 					<archive>
 						<manifest>
 							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+							<addClasspath>true</addClasspath>
+							<mainClass>${start-class}</mainClass>
 						</manifest>
 						<manifestEntries>
 							<Built-By>maven</Built-By>

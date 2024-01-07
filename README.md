@@ -6,6 +6,14 @@ A cyclic redundancy check (CRC) is an error-detecting code commonly used to dete
 
 ---
 
+## Requirements, Installation and Running (for Command Line Interface)
+
+* Java Runtime (8 o newer): https://jdk.java.net/java-se-ri/17
+* This software run in [Portable Mode](https://en.wikipedia.org/wiki/Portable_application), you only need the JAR.
+* Execute with `java -jar crc-x.x.x.jar help`
+
+---
+
 ## DOC
 
 * All CRCs implements [java.util.zip.Checksum](https://docs.oracle.com/javase/8/docs/api/java/util/zip/Checksum.html) inteface.
