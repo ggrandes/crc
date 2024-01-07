@@ -2,7 +2,7 @@
 
 A cyclic redundancy check (CRC) is an error-detecting code commonly used to detect accidental changes to digital data. Code writen in pure Java. Open Source project under Apache License v2.0
 
-### Current Stable Version is [1.0.0](https://search.maven.org/#search|ga|1|g%3Aorg.javastack%20a%3Acrc)
+### Current Stable Version is [1.0.1](https://search.maven.org/#search|ga|1|g%3Aorg.javastack%20a%3Acrc)
 
 ---
 
@@ -190,7 +190,7 @@ Add the dependency to your pom.xml:
     <dependency>
         <groupId>org.javastack</groupId>
         <artifactId>crc</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
     </dependency>
 
 ---

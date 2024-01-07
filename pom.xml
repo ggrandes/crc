@@ -4,7 +4,7 @@
 
 	<groupId>org.javastack</groupId>
 	<artifactId>crc</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description>A cyclic redundancy check (CRC) is an error-detecting code commonly used to detect accidental changes to digital data</description>
 
 	<name>${project.groupId}:${project.artifactId}</name>

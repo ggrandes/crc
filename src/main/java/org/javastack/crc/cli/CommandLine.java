@@ -33,7 +33,7 @@ public class CommandLine {
 		}
 		out.println("Computing crcName=" + crcName //
 				+ " inputFileName=" + fileName);
-		final CRC crc = ps.getInstance(false);
+		final CRC crc = ps.getInstance(true); // use lookup-table
 		try (FileInputStream fis = new FileInputStream(fileName)) {
 			while (true) {
 				final byte[] buf = new byte[4096];
